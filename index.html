@@ -58,7 +58,7 @@
 
     /* Countdown tag */
     .countdown{
-      display:flex; gap:14px; justify-content:center; margin-top:18px; flex-wrap:wrap;
+      display:flex; gap:14px; justify-content:center; margin:32px 0; flex-wrap:wrap;
       font-weight:700;
     }
     .countdown .item{ background:var(--card-bg); color:#111; padding:10px 14px; border-radius:10px; min-width:88px; }
@@ -113,16 +113,8 @@
     <div class="hero-inner">
       <h1>Шухрат ❤ Сабина</h1>
       <p class="lead">Мы с радостью приглашаем вас на нашу свадьбу — 18 октября 2025, ресторан Ханзаде, Самарканд.</p>
-
-      <div id="countdown" class="countdown" aria-live="polite">
-        <div class="item"><div id="days">--</div><small>Дней</small></div>
-        <div class="item"><div id="hours">--</div><small>Часов</small></div>
-        <div class="item"><div id="minutes">--</div><small>Минут</small></div>
-        <div class="item"><div id="seconds">--</div><small>Секунд</small></div>
-      </div>
-
       <div style="margin-top:16px;">
-        <a id="rsvp-hero" class="btn" href="https://forms.gle/KmWNDYWfLdWTyHd2A" target="_blank" rel="noopener">Подтвердить участие</a>
+        <a id="rsvp-hero" class="btn" href="https://forms.gle/cuwkNqiaJAx8J1yC9" target="_blank" rel="noopener">Подтвердить участие</a>
       </div>
     </div>
   </header>
@@ -135,6 +127,14 @@
       <p><strong>Место:</strong> Ресторан <em>Ханзаде</em>, Самарканд.</p>
       <p>Будем рады видеть каждого — приходите с теплом и хорошим настроением.</p>
     </section>
+
+    <!-- Countdown -->
+    <div id="countdown" class="countdown fade-in" aria-live="polite">
+      <div class="item"><div id="days">--</div><small>Дней</small></div>
+      <div class="item"><div id="hours">--</div><small>Часов</small></div>
+      <div class="item"><div id="minutes">--</div><small>Минут</small></div>
+      <div class="item"><div id="seconds">--</div><small>Секунд</small></div>
+    </div>
 
     <!-- Маршрут и парковка -->
     <section id="route" class="card fade-in">
@@ -171,7 +171,7 @@
       <p>Пожалуйста, подтвердите участие и укажите количество гостей и предпочтения по еде в форме:</p>
 
       <div style="margin:12px 0;">
-        <a href="https://forms.gle/KmWNDYWfLdWTyHd2A" target="_blank" rel="noopener" class="btn">Открыть форму подтверждения</a>
+        <a href="https://forms.gle/cuwkNqiaJAx8J1yC9" target="_blank" rel="noopener" class="btn">Открыть форму подтверждения</a>
       </div>
     </section>
 
@@ -229,8 +229,4 @@
           if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }
         });
       }, {threshold: 0.12});
-      document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
-    })();
-  </script>
-</body>
-</html>
+      document
