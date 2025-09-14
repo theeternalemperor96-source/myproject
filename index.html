@@ -56,7 +56,7 @@
     .hero h1{ font-family: "Playfair Display", serif; font-size:48px; margin:0 0 8px; letter-spacing:0.6px;}
     .hero p.lead{ margin:0 0 18px; font-size:18px; opacity:0.95; }
 
-    /* Countdown tag */
+    /* Countdown */
     .countdown{
       display:flex; gap:14px; justify-content:center; margin:32px 0; flex-wrap:wrap;
       font-weight:700;
@@ -70,7 +70,7 @@
     h2{ font-family: "Playfair Display", serif; margin:0 0 10px; font-size:22px; }
     p{ margin:0 0 10px; color:#333; }
 
-    /* RSVP button */
+    /* Buttons */
     .btn{
       display:inline-block; padding:12px 18px; background:var(--accent); color:white; text-decoration:none; border-radius:999px; font-weight:700;
       transition:transform .18s ease, background .18s ease;
@@ -84,10 +84,10 @@
     .dress-grid{ display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; }
     .dress-pill{ padding:8px 12px; background:#fff; border-radius:999px; border:1px solid rgba(0,0,0,0.06); }
 
-    /* Gifts note */
+    /* Gifts */
     .gifts{ background:#fff8f0; padding:14px; border-left:4px solid var(--accent); border-radius:8px; color:#3b2f22; font-weight:600; }
 
-    /* Fade-in animations */
+    /* Fade-in */
     .fade-in{ opacity:0; transform: translateY(10px); transition: opacity .6s ease, transform .6s ease; will-change:opacity,transform; }
     .fade-in.visible{ opacity:1; transform: none; }
 
@@ -114,7 +114,7 @@
       <h1>Шухрат ❤ Сабина</h1>
       <p class="lead">Мы с радостью приглашаем вас на нашу свадьбу — 18 октября 2025, ресторан Ханзаде, Самарканд.</p>
       <div style="margin-top:16px;">
-        <a id="rsvp-hero" class="btn" href="https://forms.gle/cuwkNqiaJAx8J1yC9" target="_blank" rel="noopener">Подтвердить участие</a>
+        <a class="btn" href="https://forms.gle/cuwkNqiaJAx8J1yC9" target="_blank" rel="noopener">Подтвердить участие</a>
       </div>
     </div>
   </header>
@@ -136,20 +136,19 @@
       <div class="item"><div id="seconds">--</div><small>Секунд</small></div>
     </div>
 
-    <!-- Маршрут и парковка -->
+    <!-- Маршрут -->
     <section id="route" class="card fade-in">
       <h2>Маршрут и парковка</h2>
       <div class="map-wrap" style="margin-bottom:12px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.585264168373!2d66.96240467615158!3d39.65524487156544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d18fd5ff1e6f5%3A0x75a0193d2aaca5c0!2sHanzade%20Restaurant!5e0!3m2!1sru!2s!4v1694518999999" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.585264168373!2d66.96240467615158!3d39.65524487156544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d18fd5ff1e6f5%3A0x75a0193d2aaca5c0!2sHanzade%20Restaurant!5e0!3m2!1sru!2s!4v1694518999999" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
       <p><strong>Как добраться:</strong></p>
       <ul>
         <li>Если едете на машине — лучше припарковаться на официальной стоянке ресторана (мест ограничено, рекомендуем приехать заранее).</li>
         <li>Если едете на такси — введите пункт назначения «Hanzade Restaurant, Samarkand».</li>
-        <li>Для навигации можно дать гостю ссылку: <a href="https://www.google.com/maps/dir/?api=1&destination=Hanzade+Restaurant+Samarkand" target="_blank">Открыть в картах</a></li>
+        <li>Для навигации: <a href="https://www.google.com/maps/dir/?api=1&destination=Hanzade+Restaurant+Samarkand" target="_blank">Открыть в картах</a></li>
       </ul>
-      <p style="color:var(--muted); font-size:14px;">Если нужна помощь с трансфером — напишите нам (указать телефон) или отметьте в форме RSVP.</p>
+      <p style="color:var(--muted); font-size:14px;">Если нужна помощь с трансфером — напишите нам или отметьте в форме RSVP.</p>
     </section>
 
     <!-- Dress Code -->
@@ -162,71 +161,10 @@
         <span class="dress-pill">Smart casual</span>
         <span class="dress-pill">Без кроссовок</span>
       </div>
-      <p style="margin-top:10px; color:var(--muted)">Наденьте, пожалуйста, комфортную и элегантную одежду — чтобы было красиво на фото и уютно весь вечер.</p>
+      <p style="margin-top:10px; color:var(--muted)">Наденьте комфортную и элегантную одежду — чтобы было красиво на фото и уютно весь вечер.</p>
     </section>
 
-    <!-- RSVP / Диета -->
+    <!-- RSVP -->
     <section id="rsvp" class="card fade-in">
       <h2>Подтверждение участия и диета</h2>
-      <p>Пожалуйста, подтвердите участие и укажите количество гостей и предпочтения по еде в форме:</p>
-
-      <div style="margin:12px 0;">
-        <a href="https://forms.gle/cuwkNqiaJAx8J1yC9" target="_blank" rel="noopener" class="btn">Открыть форму подтверждения</a>
-      </div>
-    </section>
-
-    <!-- Gifts note -->
-    <section class="card fade-in">
-      <h2>Подарки</h2>
-      <p class="gifts">Просим не дарить вещи (тряпки / одежду и т.п.) — будем признательны денежным подаркам.</p>
-    </section>
-
-  </main>
-
-  <footer class="fade-in">
-    С любовью, Шухрат и Сабина 💍 — 18.10.2025
-  </footer>
-
-  <!-- Scripts: Countdown + appear animations -->
-  <script>
-    // COUNTDOWN
-    (function(){
-      const target = new Date("2025-10-18T18:00:00+05:00").getTime();
-      const $d = document.getElementById('days');
-      const $h = document.getElementById('hours');
-      const $m = document.getElementById('minutes');
-      const $s = document.getElementById('seconds');
-
-      function tick(){
-        const now = Date.now();
-        let diff = target - now;
-        if(diff <= 0){
-          $d.innerText = '0'; $h.innerText='0'; $m.innerText='0'; $s.innerText='0';
-          clearInterval(interval);
-          return;
-        }
-        const days = Math.floor(diff / (1000*60*60*24));
-        diff -= days*(1000*60*60*24);
-        const hours = Math.floor(diff/(1000*60*60));
-        diff -= hours*(1000*60*60);
-        const minutes = Math.floor(diff/(1000*60));
-        diff -= minutes*(1000*60);
-        const seconds = Math.floor(diff/1000);
-
-        $d.innerText = days;
-        $h.innerText = String(hours).padStart(2,'0');
-        $m.innerText = String(minutes).padStart(2,'0');
-        $s.innerText = String(seconds).padStart(2,'0');
-      }
-      tick();
-      const interval = setInterval(tick, 1000);
-    })();
-
-    // APPEAR on scroll
-    (function(){
-      const obs = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }
-        });
-      }, {threshold: 0.12});
-      document
+      <p>Пожалуйста, подтверд
